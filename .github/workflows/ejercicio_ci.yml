@@ -36,7 +36,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    . name: outdated_dependencies
+    - name: outdated_dependencies
       run: |
         pip list --outdated
 
